@@ -63,7 +63,8 @@ public class ArrayUtility {
         for (int each : numbers) {
             int counter=0;
             for (int i : numbers) {
-                if (i==each) counter++;
+                if (i==each)
+                    counter++;
             }
             if (counter==1){
                 temp+=""+each;

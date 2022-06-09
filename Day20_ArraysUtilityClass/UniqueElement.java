@@ -5,7 +5,7 @@ import utilities.ArrayUtility;
 public class UniqueElement {
     public static void main(String[] args) {
 
-        int[] numbers = {13, 1, 5, 6, 6, 12};
+        int[] numbers = {1, 1, 5, 6, 6, 6};
         for (int each : numbers) {
             int counter = 0;
             for (int i : numbers) {
