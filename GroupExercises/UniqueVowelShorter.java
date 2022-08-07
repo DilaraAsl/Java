@@ -13,7 +13,7 @@ public class UniqueVowelShorter {
 
     public static int findVowel(String str) {
 
-return -1;
+        return -1;
     }
 
 }

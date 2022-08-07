@@ -1,5 +1,7 @@
 package GroupExercises;
-import java.util.*;
+
+import java.util.Scanner;
+
 public class PizzaAppWithBugs {
     public static void main(String[] args) {
 
@@ -25,7 +27,7 @@ public class PizzaAppWithBugs {
                 continue;
             }
 
-           System.out.println("Please enter your password:");
+            System.out.println("Please enter your password:");
             String givenPassword = scanner.next();
 
             if ((email.equals(givenEmail) && password.equals(givenPassword))) {

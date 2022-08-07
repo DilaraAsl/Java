@@ -13,14 +13,14 @@ public class LongestSubstringNoDuplicates {
     public static String longestSubstring(String str) {
         int max = 0;
         String longest = ""; // will hold the longest substring
-        for (int i = 0; i <str.length() ; i++) {
+        for (int i = 0; i < str.length(); i++) {
 
-            String temp=""; // temp substring resets
+            String temp = ""; // temp substring resets
 
             for (int j = i; j < str.length(); j++) {
 
 
-                if ( !(temp.contains(str.charAt(j) + ""))) { // forms the temp substring
+                if (!(temp.contains(str.charAt(j) + ""))) { // forms the temp substring
                     temp += str.charAt(j);
 
 
@@ -53,6 +53,7 @@ public class LongestSubstringNoDuplicates {
         }
         return str.substring(longestStart, longestEnd);
     }
+
     public static String longestSubstring3(String str) {
         if (str.length() <= 1) return str;
         String substr = "";

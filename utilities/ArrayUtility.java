@@ -1,5 +1,7 @@
 package utilities;
 
+import java.util.Arrays;
+
 public class ArrayUtility {
     public static int[] merge(int[] arr1,int[] arr2){
         int[] temp=new int[arr1.length+arr2.length];
@@ -74,5 +76,81 @@ public class ArrayUtility {
         }
 
     }
+public static int[] addElement(int[] array,int element){
+    int[] newArray= Arrays.copyOf(array,array.length+1);
 
+    newArray[newArray.length-1]=element;
+    return newArray;
+    }
+    public static double[] addElement(double[] array,double element){
+        double[] newArray= Arrays.copyOf(array,array.length+1);
+
+        newArray[newArray.length-1]=element;
+        return newArray;
+    }
+    public static String[] addElement(String[] array,String element){
+        String[] newArray= Arrays.copyOf(array,array.length+1);
+
+        newArray[newArray.length-1]=element;
+        return newArray;
+    }
+    public static boolean contains(int[]array, int element){
+        for (int each : array) {
+            if(each==element){
+                return true;
+            }
+        }
+        return false;
+    }
+    public static boolean contains(double[] array, double element){
+        for (double each : array) {
+            if(each==element){
+                return true;
+            }
+        }
+        return false;
+    }
+    public static boolean contains(char[] array, char element){
+        for (char each : array) {
+            if(each==element){
+                return true;
+            }
+        }
+        return false;
+    }
+    public static boolean contains(String[] array, String element){
+        for (String each : array) {
+            if(each.equals(element)){
+                return true;
+            }
+        }
+        return false;
+    }
+    public static int[] remove(int[] array, int index){
+        int[] temp=new int[array.length-1];
+        // skip the index when assigning values to temp
+        int j=0;
+        for (int i = 0; i < array.length; i++) {
+            if(i==index){
+                continue;
+            }
+            else {temp[j]=array[i]; j++;}
+        }
+        return temp;
+    }
+    public static int[] removeDuplicates(int[] array){
+        int[] temp=new int[array.length];
+        for (int iEach : array) {
+            int i=0;
+            for (int jEach : array) {
+                if(iEach!=jEach && !ArrayUtility.contains(temp,jEach)){
+                    temp[i]=jEach;
+                    i++;
+
+                }
+            }
+            return temp;
+        }
+return temp;
+    }
 }

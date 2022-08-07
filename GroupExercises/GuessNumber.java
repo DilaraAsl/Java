@@ -13,21 +13,20 @@ public class GuessNumber {
             if (number == targetNumber) {
                 System.out.println("Congrats!");
                 break;
-            }
-            else{
-            while (number != targetNumber) {
+            } else {
+                while (number != targetNumber) {
 
-                if (number < targetNumber) {
-                    System.err.println("Your number is smaller ");
-                    System.out.println("Please enter another number");
-                    number = kb.nextInt();
-                } else {
-                    System.err.println("Your number is bigger ");
-                    System.out.println("Please enter another number");
-                    number = kb.nextInt();
+                    if (number < targetNumber) {
+                        System.err.println("Your number is smaller ");
+                        System.out.println("Please enter another number");
+                        number = kb.nextInt();
+                    } else {
+                        System.err.println("Your number is bigger ");
+                        System.out.println("Please enter another number");
+                        number = kb.nextInt();
+                    }
+
                 }
-
-            }
             }
         }
     }
