@@ -10,5 +10,13 @@ public class test {
         str2 = str2.replaceAll("[^a-zA-Z0-9]", "");
         System.out.println(str2);
 
+        StringBuilder sb = new StringBuilder();
+        sb.append(34);
+        StringBuilder sr = sb.reverse();
+        System.out.println(sb.equals(sr));
+
+        int[] nums = {1, 1, 2, 3, 3, 3, 3, 1, 2, 1, 1, 1, 1, 1};
+
+
     }
 }

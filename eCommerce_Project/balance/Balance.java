@@ -25,5 +25,5 @@ public abstract class Balance {
         this.balance = balance;
     }
 
-    public abstract Double addBalance(Double additionalBalance);
+    public abstract Double addBalance(Double additionalBalance); //
 }

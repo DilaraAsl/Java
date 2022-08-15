@@ -15,7 +15,7 @@ public class LongestPrefix {
         //Sorting the array will order the list in alphabetical order
         Arrays.sort(list);
         int i = 0;
-        int counter = 0;
+        
 
         String longest = "";
         // since the list is in alphabetical order we can look att
